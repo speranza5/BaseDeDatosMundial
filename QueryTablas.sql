@@ -1,7 +1,14 @@
+
+CREATE TABLE Pais(
+	codigo_pais int NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	nombre varchar(50) NOT NULL
+);
+
 CREATE TABLE Persona(
 pasaporte varchar(20) NOT NULL PRIMARY KEY,
 fecha_nacimiento date NOT NULL,
-nombre_apellido varchar(50) NOT NULL
+nombre_apellido varchar(50) NOT NULL,
+nacionalidad int FOREIGN KEY REFERENCES Pais(codigo_pais)
 );
 
 CREATE TABLE Jugador(
@@ -19,10 +26,7 @@ CREATE TABLE Ciudad(
 	nombre varchar(50) NOT NULL
 );
 
-CREATE TABLE Pais(
-	codigo_pais int NOT NULL IDENTITY(1,1) PRIMARY KEY,
-	nombre varchar(50) NOT NULL
-);
+
 
 
 CREATE TABLE Mundial(
