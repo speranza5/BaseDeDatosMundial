@@ -106,3 +106,4 @@ INSERT INTO Pais (nombre) VALUES ('Túnez');
 INSERT INTO Pais (nombre) VALUES ('Turquía');
 INSERT INTO Pais (nombre) VALUES ('Ucrania');
 INSERT INTO Pais (nombre) VALUES ( 'Uruguay');
+INSERT INTO Pais (nombre) VALUES ( 'Argentina');
