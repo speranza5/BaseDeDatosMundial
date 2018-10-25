@@ -1,7 +1,8 @@
 
 CREATE TABLE Pais(
 	codigo_pais int NOT NULL IDENTITY(1,1) PRIMARY KEY,
-	nombre varchar(50) NOT NULL
+	nombre varchar(50) NOT NULL,
+	borrado bit NOT NULL DEFAULT 0
 );
 
 CREATE TABLE Persona(
