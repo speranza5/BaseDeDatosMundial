@@ -1,0 +1,2 @@
+insert into Partido(anio_mundial, codigo_instancia, codigo_grupo, codigo_estadio, codigo_pais_1, anio_mundial_1,codigo_pais_2, anio_mundial_2, fecha_hora) values (2006,1,'C',44,88,2006,41,2006,2006-06-10 10:20:00), (2006,1,'A',44,01,2006,42,2006,2006-06-10 15:30:00);
+insert into Gol(anio_mundial, numero_partido, codigo_tipo_gol,pasaporte_jugador, tiempo_gol, en_contra) values (2006,1,1,'AA5582A',0),(2006,5,2,'AA5581B',1);
