@@ -12,6 +12,6 @@ GROUP BY Pais.nombre, Equipo.anio_mundial
 
 
 
-SELECT e.anio_mundial,e.nombre,e.cantidad
+SELECT TOP 1 e.anio_mundial,e.nombre,e.cantidad
 FROM golesXEquipoXMundial e
 WHERE e.cantidad = (SELECT MIN(golesXEquipoXMundial.cantidad) FROM golesXEquipoXMundial)
