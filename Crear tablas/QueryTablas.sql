@@ -114,8 +114,9 @@ CREATE TABLE Gol(
 	
 	codigo_tipo_gol int NOT NULL FOREIGN KEY REFERENCES Tipo_Gol(codigo_tipo_gol),
 	pasaporte_jugador varchar(20) NOT NULL FOREIGN KEY REFERENCES Jugador(pasaporte_jugador),
-	tiempo_gol timeStamp NOT NULL,
+	numero_gol int NOT NULL,
+	minuto_gol int NOT NULL,
 	en_contra bit NOT NULL,
-	PRIMARY KEY(anio_mundial,numero_partido,tiempo_gol)
+	PRIMARY KEY(anio_mundial,numero_partido,numero_gol)
 ); 
 
